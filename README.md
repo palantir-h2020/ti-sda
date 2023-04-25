@@ -1,4 +1,4 @@
-# Semantic Data Aggregator
+# Threat Intelligence / Semantic Data Aggregator
 
 The `Semantic Data Aggregator` (`SDA`) is a semantic, model-driven monitoring component that enables data collection, data transformation, and data aggregation from different monitoring elements, and coordinates the flow of these data among a set of heterogeneous data sources and data consumers. By using formal data models, defined by means of the YANG modelling language ([RFC7950](https://datatracker.ietf.org/doc/rfc7950/)), the `SDA` allows the programmer to abstract from the encoding and data model differences between monitoring information source and consumer. Such abstraction allows the generalization of the pre-processing stage, which will no longer need to be different for each source-to-consumer combination.
 
@@ -8,7 +8,7 @@ The `Semantic Data Aggregator` (`SDA`) is a semantic, model-driven monitoring co
 
 # Table of Contents
 
-- [Semantic Data Aggregator](#semantic-data-aggregator)
+- [Treat Intelligence / Semantic Data Aggregator](#threat-intelligence--semantic-data-aggregator)
 - [Table of Contents](#table-of-contents)
 - [SDA Architectural Design](#sda-archictectural-design)
   - [NetFlow v9 and KPI-Augmented NetFlow v9 YANG data models](#netflow-v9-and-kpi-augmented-netflow-v9-yang-data-models)
