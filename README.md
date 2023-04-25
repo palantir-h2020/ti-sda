@@ -79,7 +79,7 @@ The data aggregated and processed by the `SDA` framework can be consumed by othe
 
 In addition, there is available a Kubernetes Helm Chart to deploy the `CDS` along with the SDA-related components for detecting cryptoming traffic from NetFlow-based monitoring data. For the deployment and integration of the `SDA` framework for NetFlow processing and the `CDS` for cryptomining traffic detection within the Hybrid Threat Intelligence Framework of the PALANTIR infrastructure, follow the details [here](kubernetes/netflow-sda-cds-full-pipeline//README.md).
 
-All the details about the CDS are also covered in its own GitHub repository called [`ti-cds`](https://github.com/palantir-h2020/ti-cds) within the [PALANTIR organization](https://github.com/palantir-h2020).
+All the details about the `CDS` are also covered in its own GitHub repository called [`ti-cds`](https://github.com/palantir-h2020/ti-cds) within the [PALANTIR organization](https://github.com/palantir-h2020).
 
 # License
 
