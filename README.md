@@ -8,7 +8,7 @@ The `Semantic Data Aggregator` (`SDA`) is a semantic, model-driven monitoring co
 
 # Table of Contents
 
-- [Treat Intelligence / Semantic Data Aggregator](#threat-intelligence--semantic-data-aggregator)
+- [Threat Intelligence / Semantic Data Aggregator](#threat-intelligence--semantic-data-aggregator)
 - [Table of Contents](#table-of-contents)
 - [SDA Architectural Design](#sda-archictectural-design)
   - [NetFlow v9 and KPI-Augmented NetFlow v9 YANG data models](#netflow-v9-and-kpi-augmented-netflow-v9-yang-data-models)
@@ -21,7 +21,6 @@ The `Semantic Data Aggregator` (`SDA`) is a semantic, model-driven monitoring co
   - [GoFlow2 NetFlow Collector](#goflow2-netflow-collector)
   - [Adaptation and Aggregation Data Engineering Applications for NetFlow](#adaptation-and-aggregation-data-engineering-applications-for-netflow)
   - [SDA and Cryptomining Detection System](#sda-and-cryptomining-detection-system)
-- [Acknowledgements](#acknowledgements)
 - [License](#license)
   
 # SDA Archictectural Design
