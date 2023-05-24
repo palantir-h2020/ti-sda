@@ -15,12 +15,12 @@ The `CDS` application can be deployed as a service in Kubernetes and this folder
 kubectl [--kubeconfig <kubeconfig-file>] [-n <namespace>] apply -f crypto_detection-singletenant.yaml
 ```
 
-In the [crypto_detection-singletenant.yaml](crypto-detection-singletenant.yaml) template file allows parameterizing differents arguments within the `args` statement needed to deploy the CDS. The main arguments are the following:
+In the [crypto-detection-singletenant.yaml](crypto-detection-singletenant.yaml) template file allows parameterizing differents arguments within the `args` statement needed to deploy the CDS. The main arguments are the following:
 - `-b <kafka_broker>`, where `<kafka_broker>` is the Kafka broker service endpoint.
 - `-c <input_topic>`, where `<input_topic>`is the Kafka input topic for the CDS.
 - `-p <output_topic>`, where `<output_topic>`is the Kafka output topic for the CDS.
 
-In addition, there is a variant template file [crypto_detection-multitenants.yaml](crypto-detection-multitenants.yaml) for deploying the CDS to support the PALANTIR multi-tenancy service. This template includes the following additional parameters:
+In addition, there is a variant template file [crypto-detection-multitenants.yaml](crypto-detection-multitenants.yaml) for deploying the CDS to support the PALANTIR multi-tenancy service. This template includes the following additional parameters:
 - `-ts <tenant_service>`, where `<tenant_service>` is the endpoint of the multi-tenancy service available within the PALANTIR platform that allows to get the Kafka topic partition associated with a specific tenant ID.
 - `-tid <tenant_id>`, where `<tenant_id>`is the tenant ID needed to get the particular Kafka topic partition associated with it. 
 
