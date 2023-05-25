@@ -59,7 +59,7 @@ The `DCP` Consumer Driver is the end of the `SDA` pipeline, in charge of adaptin
 
 # Implementation details
 
-All the SDA-related subcomponents are developed to be deployed as services in a Kubernetes environment. A Kubernetes Helm Chart is used to deploy the SDA-related components for the full SDA-related NetFlow data pipeline processing. For the deployment and integration of the `SDA` framework for NetFlow processing within the Hybrid Threat Intelligence Framework of the PALANTIR infrastructure, follow the details [here](kubernetes/netflow-sda-full-pipeline/README.md). The implementation details of each component is briefly analysed below.
+All the SDA-related subcomponents are developed to be deployed as services in a Kubernetes environment. A Kubernetes Helm Chart is used to deploy the SDA-related components for the full SDA-related NetFlow data pipeline processing. For the deployment and integration of the `SDA` framework for NetFlow processing within the Hybrid Threat Intelligence Framework of the PALANTIR infrastructure, follow the details [here](kubernetes/netflow-sda-full-pipeline/README.md). In addition, there is a variant deployment option to support the PALANTIR multi-tenancy service (follow de details [here](kubernetes/netflow-sda-full-pipeline-multitenancy/README.md)). The implementation details of each component is briefly analysed below.
 
 ## GoFlow2 NetFlow Collector
 
@@ -77,7 +77,7 @@ All Flink applications have been developed in Java, which is its native programm
 
 The data aggregated and processed by the `SDA` framework can be consumed by other external systems to continue procesing the data, for anomaly detection, or for threat classification, among others. The `Cryptomining Detection System` (i.e., `CDS`) is a consumer system for the `SDA` with the purpose to detect cryptomining traffic from NetFlow-based monitoring data. For more details about the `CDS`, follow the details [here](kubernetes/crypto-detector/README.md).
 
-In addition, there is available a Kubernetes Helm Chart to deploy the `CDS` along with the SDA-related components for detecting cryptoming traffic from NetFlow-based monitoring data. For the deployment and integration of the `SDA` framework for NetFlow processing and the `CDS` for cryptomining traffic detection within the Hybrid Threat Intelligence Framework of the PALANTIR infrastructure, follow the details [here](kubernetes/netflow-sda-cds-full-pipeline//README.md).
+In addition, there is available a Kubernetes Helm Chart to deploy the `CDS` along with the SDA-related components for detecting cryptoming traffic from NetFlow-based monitoring data. For the deployment and integration of the `SDA` framework for NetFlow processing and the `CDS` for cryptomining traffic detection within the Hybrid Threat Intelligence Framework of the PALANTIR infrastructure, follow the details [here](kubernetes/netflow-sda-cds-full-pipeline//README.md). In addition, there is a variant deployment option to support the PALANTIR multi-tenancy service (follow de details [here](kubernetes/netflow-sda-cds-full-pipeline-multitenancy/README.md))
 
 All the details about the `CDS` are also covered in its own GitHub repository called [`ti-cds`](https://github.com/palantir-h2020/ti-cds) within the [PALANTIR organization](https://github.com/palantir-h2020).
 
